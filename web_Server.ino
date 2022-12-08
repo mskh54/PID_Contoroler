@@ -2,9 +2,9 @@ void handle_OnConnect() {
   server.send(200, "text/html", SendHTML(Height_1)); 
 }
 
-String SendHTML(float Height){
+String SendHTML(float Height_1){
   String variable = "";
-  variable.concat(Height);
+  variable.concat(Height_1);
   String ptr = "<!DOCTYPE html> <html>\n";
   ptr +="<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n";
   ptr +="<title>LED Control</title>\n";
