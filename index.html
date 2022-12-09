@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PID contoroler</title>
+    <style>
+       * {
+      margin: 20px auto;
+      padding: 0;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .login {
+      max-width: 400px;
+      width: 100%;
+      height: 700px;
+      padding: 60px 35px 35px 35px;
+      border-radius: 40px;
+      background: #ecf0f3;
+      box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+      }
+      .logo {
+      background: url("logo.png");
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto;
+      box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #e7aaaf,
+      -8px -8px 15px #ffffff;
+      }
+      .title {
+      text-align: center;
+      font-size: 40px;
+      padding-top: 24px;
+      letter-spacing: 0.5px;
+      }
+      .sub-title {
+      text-align: center;
+      font-size: 15px;
+      padding-top: 7px;
+      letter-spacing: 3px;
+      }
+      .fields {
+      width: 100%;
+      padding: 75px 5px 5px 5px;
+      }
+      .fields input {
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 25px;
+      color: #555;
+      height: 40px;
+      }
+      .username,
+      .password {
+      margin-bottom: 30px;
+      border-radius: 25px;
+      padding-left: 30px;
+      box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+      }
+      .username i,
+      .password i {
+      color: #aaa;
+      padding-right: 10px;
+      }
+      .signin-btn {
+      outline: none;
+      border: none;
+      cursor: pointer;
+                display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+      width: 70%;
+      height: 60px;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: "Lato", sans-serif;
+      color: #fff;
+      text-align: center;
+      background: #24cfaa;
+      box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+      transition: 0.5s;
+      }
+      .signin-btn:hover {
+      background: #2fdbb6;
+      }
+      .signin-btn:active {
+      background: #1da88a;
+      }
+      .link {
+      padding-top: 20px;
+      text-align: center;
+      }
+      .link a {
+      text-decoration: none;
+      color: #aaa;
+      font-size: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="login">
+      <!-- <div class="logo"></div> -->
+      <div class="title">PID contoroler</div>
+      <div class="sub-title">with esp8266</div>
+
+      <div class="fields">
+        <div class="username">
+          <i class="fa fa-user fa-lg"></i>
+          <input type="username" class="user" placeholder="Height" />
+        </div>
+        <div class="username">
+          <i class="fa fa-user fa-lg"></i>
+          <input type="username" class="user" placeholder="Setpoint" />
+        </div>
+      </div>
+
+      <button class="signin-btn">Submit</button>
+      <button class="signin-btn" onclick="location.href='changePid.html';" >Change index PID</button>
+      <div class="sub-title">desing by MohammadSadegh Khodadadi </div>
+    </div>
+  </body>
+</html>
